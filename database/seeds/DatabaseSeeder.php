@@ -1,7 +1,13 @@
 <?php
 
+declare(strict_types = 1);
+
 use Illuminate\Database\Seeder;
 
+/**
+ * Class DatabaseSeeder
+ * @author Kristo Leas <kristo.leas@gmail.com>
+ */
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -12,5 +18,6 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UserSeeder::class);
+	    $this->call(PermissionsSeeder::class);
     }
 }
